@@ -1,6 +1,6 @@
 #import('dart:dom');
 #source('ComplexNumber.dart');
-#source('ComplexNumberImlp.dart');
+#source('ComplexNumberImpl.dart');
 
 class ComplexNumberExample {
 
@@ -9,21 +9,21 @@ class ComplexNumberExample {
 
   void run() {
     
-    ComplexNumber cn = new ComplexNumberImlp(1,1);
+    ComplexNumber cn = new ComplexNumberImpl(1,1);
     write("real = ${cn.real}");
     write("imaginary = ${cn.imaginary}");
     write("cn" + cn.toString());
     
-    ComplexNumber c = new ComplexNumberImlp(2,3);
-    ComplexNumber cc = new ComplexNumberImlp(2,-3);
+    ComplexNumber c = new ComplexNumberImpl(2,3);
+    ComplexNumber cc = new ComplexNumberImpl(2,-3);
     ComplexNumber ccc = c.multiply(c,cc); 
     
     write("ccc.real = ${ccc.real}");
     write("ccc.imaginary = ${ccc.imaginary}");
     write("ccc" + ccc.toString());
     
-    c = new ComplexNumberImlp(3,-5);
-    cc = new ComplexNumberImlp(6,7);
+    c = new ComplexNumberImpl(3,-5);
+    cc = new ComplexNumberImpl(6,7);
     ccc = c + cc; 
     
     write("ccc.real = ${ccc.real}");
@@ -35,50 +35,50 @@ class ComplexNumberExample {
     write("ccc.imaginary = ${ccc.imaginary}");
     write("ccc" + ccc.toString());
     
-    c = new ComplexNumberImlp(2,3);
-    cc = new ComplexNumberImlp(4,7);
+    c = new ComplexNumberImpl(2,3);
+    cc = new ComplexNumberImpl(4,7);
     ccc = c * cc; 
     write("ccc.real = ${ccc.real}");
     write("ccc.imaginary = ${ccc.imaginary}");
     write("ccc" + ccc.toString());
     
-    c = new ComplexNumberImlp(2,-1);
-    cc = new ComplexNumberImlp(3,2);
+    c = new ComplexNumberImpl(2,-1);
+    cc = new ComplexNumberImpl(3,2);
     ccc = c / cc;    
     write("ccc.real = ${ccc.real}");
     write("ccc.imaginary = ${ccc.imaginary}");
     write("ccc" + ccc.toString());
     
-    c = new ComplexNumberImlp(-3,4);
-    cc = new ComplexNumberImlp(2,-5);
+    c = new ComplexNumberImpl(-3,4);
+    cc = new ComplexNumberImpl(2,-5);
     ccc = c + cc;    
     write("ccc.real = ${ccc.real}");
     write("ccc.imaginary = ${ccc.imaginary}");
     write("ccc" + ccc.toString());
     
-    c = new ComplexNumberImlp(0,3);
-    cc = new ComplexNumberImlp(2,-4);
+    c = new ComplexNumberImpl(0,3);
+    cc = new ComplexNumberImpl(2,-4);
     ccc = c - cc;    
     write("ccc.real = ${ccc.real}");
     write("ccc.imaginary = ${ccc.imaginary}");
     write("ccc" + ccc.toString());
     
-    c = new ComplexNumberImlp(2,-7);
-    cc = new ComplexNumberImlp(3,4);
+    c = new ComplexNumberImpl(2,-7);
+    cc = new ComplexNumberImpl(3,4);
     ccc = c * cc;    
     write("ccc.real = ${ccc.real}");
     write("ccc.imaginary = ${ccc.imaginary}");
     write("ccc" + ccc.toString());
     
-    c = new ComplexNumberImlp(1,1);
-    cc = new ComplexNumberImlp(2,-3);
+    c = new ComplexNumberImpl(1,1);
+    cc = new ComplexNumberImpl(2,-3);
     ccc = c * cc;    
     write("ccc.real = ${ccc.real}");
     write("ccc.imaginary = ${ccc.imaginary}");
     write("ccc" + ccc.toString());
     
-    c = new ComplexNumberImlp(0,-4);
-    cc = new ComplexNumberImlp(0,4);
+    c = new ComplexNumberImpl(0,-4);
+    cc = new ComplexNumberImpl(0,4);
     ccc = c * cc;    
     write("ccc.real = ${ccc.real}");
     write("ccc.imaginary = ${ccc.imaginary}");

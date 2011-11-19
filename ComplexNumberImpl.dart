@@ -1,8 +1,8 @@
-class ComplexNumberImlp implements ComplexNumber {
+class ComplexNumberImpl implements ComplexNumber {
   double r;
   double i;
   
-  ComplexNumberImlp([this.r=0,this.i=0]);
+  ComplexNumberImpl([this.r=0,this.i=0]);
   
   String toString() {
     StringBuffer sb = new StringBuffer();
@@ -42,7 +42,7 @@ class ComplexNumberImlp implements ComplexNumber {
   ComplexNumber add(ComplexNumber complexNumber1, ComplexNumber complexNumber2) {
     double rr = complexNumber1.real+complexNumber2.real;
     double ii = complexNumber1.imaginary+complexNumber2.imaginary;
-    return new ComplexNumberImlp(rr,ii);
+    return new ComplexNumberImpl(rr,ii);
   }
   
   ComplexNumber operator -(ComplexNumber other) { 
@@ -52,7 +52,7 @@ class ComplexNumberImlp implements ComplexNumber {
   ComplexNumber subtract(ComplexNumber complexNumber1, ComplexNumber complexNumber2) {
     double rr = complexNumber1.real-complexNumber2.real;
     double ii = complexNumber1.imaginary-complexNumber2.imaginary;
-    return new ComplexNumberImlp(rr,ii);
+    return new ComplexNumberImpl(rr,ii);
   }
   
   ComplexNumber operator *(ComplexNumber other) {
@@ -63,7 +63,7 @@ class ComplexNumberImlp implements ComplexNumber {
     double rr = complexNumber1.real*complexNumber2.real - complexNumber1.imaginary*complexNumber2.imaginary;
     double ii = complexNumber1.real*complexNumber2.imaginary + complexNumber1.imaginary*complexNumber2.real;
     
-    return new ComplexNumberImlp(rr,ii);
+    return new ComplexNumberImpl(rr,ii);
   }
   
   ComplexNumber operator /(ComplexNumber other) { 
@@ -82,7 +82,7 @@ class ComplexNumberImlp implements ComplexNumber {
       /
       (complexNumber2.real*complexNumber2.real + complexNumber2.imaginary*complexNumber2.imaginary);
     
-    return new ComplexNumberImlp(rr,ii);
+    return new ComplexNumberImpl(rr,ii);
   }
   
   bool operator ==(other) {
